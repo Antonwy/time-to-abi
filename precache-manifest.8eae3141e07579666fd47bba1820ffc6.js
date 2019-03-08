@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/time-to-abi/static/js/2.234b4e20.chunk.js"
   },
   {
-    "revision": "564c2b080a60a83993aecc7e1f0c8123",
+    "revision": "c92afbc6641f154600769f785b0fca63",
     "url": "/time-to-abi/index.html"
   }
 ];
