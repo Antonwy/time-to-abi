@@ -2,9 +2,11 @@
   "name": "time-to-abi",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://gitname.github.io/react-gh-pages",
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-pose": "^4.0.8",
     "react-scripts": "2.1.8"
   },
   "scripts": {
@@ -21,5 +23,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
