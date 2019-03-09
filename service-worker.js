@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/time-to-abi/precache-manifest.0acfa362f3fddacc2cbcc4e17c7a58bd.js"
+  "/time-to-abi/precache-manifest.5da97a631ce50ca1fc2962c1c9de0090.js"
 );
 
 workbox.clientsClaim();
