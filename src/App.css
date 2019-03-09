@@ -1,11 +1,7 @@
 
 .mainContainer {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   padding: 50px;
+   background: linear-gradient(#FFA37D, #FF627C) no-repeat
 }
 
 .mainContainer > h1 {
@@ -14,25 +10,27 @@
 
 .timerContainer {
     display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.timeContainer {
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    max-width: 90vw;
-    overflow: hidden;
 }
 
-.timerContainer .doublePoints {
+.timeContainer .doublePoints {
     text-shadow: 0 5px 5px rgba(53, 53, 53, .2);
-    font-size: 10vw;
 }
 
 .numberContainer {
-    width: calc(90vw / 4);
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 .numberContainer>div{
@@ -41,18 +39,13 @@
     justify-content: space-evenly;
 }
 
-.numberContainer>h1 {
-    text-shadow: 0 5px 5px rgba(53, 53, 53, .2);
-    font-size: 15vw;
-}
-
 .flipContainer {
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .flipContainer>h1 {
     text-shadow: 0 5px 5px rgba(53, 53, 53, .2);
-    font-size: 15vw;
+    font-size: 10%;
 }
 
 @media all and (min-width: 960px) {

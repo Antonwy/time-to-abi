@@ -34,11 +34,15 @@ export default class FlipNumber extends Component {
     }
 
   render() {
-      const {animation} = this.state;
+    const {animation} = this.state;
+    const {height} = this.props;
     return (
       <div className="flipContainer">
         <AnimatedNumber
             pose={animation}
+            style={{
+                fontSize: height
+            }}
         >{this.state.number}
         </AnimatedNumber>
       </div>

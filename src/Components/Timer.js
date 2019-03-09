@@ -78,22 +78,47 @@ export default class Timer extends Component {
         }
         return value;
     }
-    
-
     render() {
-
         const {days, hours, min, sec} = this.state;
-
+        const {width, height, className, style, titleElement} = this.props;
         return (
-        <div className="timerContainer">
-            <Number number={days} text="Tage" />
-            <div className="doublePoints">:</div>
-            <Number number={hours} text="Stunden" />
-            <div className="doublePoints">:</div>
-            <Number number={min} text="Minuten" />
-            <div className="doublePoints">:</div>
-            <Number number={sec} text="Sekunden" />
+        <div 
+            className={`timerContainer ${className}`}
+            style={{
+                width,
+                ...style
+            }}
+            >
+            <div>
+                {
+                    titleElement
+                }
+            </div>
+            <div className="timeContainer">
+                <Number height={height} number={days} text="Tage" />
+                <div style={{fontSize: height}} className="doublePoints">:</div>
+                <Number height={height} number={hours} text="Stunden" />
+                <div style={{fontSize: height}} className="doublePoints">:</div>
+                <Number height={height} number={min} text="Minuten" />
+                <div style={{fontSize: height}} className="doublePoints">:</div>
+                <Number height={height} number={sec} text="Sekunden" />
+            </div>
         </div>
         )
     }
+}
+
+const getCurrentYear = () => {
+    const currentDate = new Date()
+    const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
+    return year
+}
+
+Timer.defaultProps = {
+    date: `${getCurrentYear()}-05-03T00:00:00`,
+    height: "100px",
+    width: "",
+    className: "",
+    style: {},
+    titleElement: <div></div>
 }
